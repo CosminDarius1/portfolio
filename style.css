@@ -30,7 +30,30 @@ main {
     display: flex;
     flex-wrap: nowrap;
     padding-top: 10px;
+    margin-bottom: 60px;
 }
+.scroll-down-link {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    animation: fadeMoveDown 1.5s ease-in-out infinite;
+}
+
+@keyframes fadeMoveDown {
+    0%, 100% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(10px);
+    }
+}
+
 
 .nav-left {
     display: flex;
@@ -78,6 +101,7 @@ main {
     justify-content: center;
     width: 50%;
     padding: 15px;
+    margin-bottom: 20px;
 }
 
 .hello-section p {
@@ -90,76 +114,23 @@ main {
     font-size: 3rem;
     color: #f7f7f7;
 }
-.scroll-down-arrow {
-    position: absolute;
-    z-index: 100;
-    cursor: pointer;
-    height: 60px;
-    width: 80px;
-    margin: 0 0 0 -40px;
-    line-height: 60px;
-    left: 50%;
-    bottom: 10px;
-    color: #FFF;
-    text-align: center;
-    font-size: 70px;
-    text-decoration: none;
-    text-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
 
-
-    /* Animation */
-    animation: fade_move_down 2s ease-in-out infinite;
-}
-
-/* Keyframes for the animation */
-@keyframes fade_move_down {
-    0%   { transform: translateY(-20px); opacity: 0;  }
-    50%  { opacity: 1;  }
-    100% { transform: translateY(20px); opacity: 0; }
-}
-
-.scroll-down-link {
-    position: absolute;
-    z-index: 100;
-    cursor:pointer;
-    height: 60px;
-    width: 80px;
-    margin: 0 0 0 -40px;
-    line-height: 60px;
-    left: 50%;
-    bottom: 10px;
-    color: #FFF;
-    text-align: center;
-    font-size: 70px;
-    text-decoration: none;
-    text-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
-    -webkit-animation: fade_move_down 2s ease-in-out infinite;
-    -moz-animation:    fade_move_down 2s ease-in-out infinite;
-    animation:         fade_move_down 2s ease-in-out infinite;
-    /*animated scroll arrow animation*/
-    @-webkit-keyframes fade_move_down {
-        0%   { -webkit-transform:translate(0,-20px); opacity: 0;  }
-        50%  { opacity: 1;  }
-        100% { -webkit-transform:translate(0,20px); opacity: 0; }
-    }
-    @-moz-keyframes fade_move_down {
-        0%   { -moz-transform:translate(0,-20px); opacity: 0;  }
-        50%  { opacity: 1;  }
-        100% { -moz-transform:translate(0,20px); opacity: 0; }
-    }
-    @keyframes fade_move_down {
-        0%   { transform:translate(0,-20px); opacity: 0;  }
-        50%  { opacity: 1;  }
-        100% { transform:translate(0,20px); opacity: 0; }
-    }
-}
 .about-section {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     width: 100%;
     padding: 0 10px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s, transform 1s;
 }
+
+.about-section.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .about-section h2 {
     font-size: 2rem;
     margin-left: 15px;
@@ -287,7 +258,6 @@ main {
 .fa-brands {
     font-size: 30px;
 }
-
 @media screen and (max-width: 800px) {
     .card-img-text {
         flex-direction: column;
