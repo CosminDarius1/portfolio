@@ -18,13 +18,17 @@ function toggleSectionVisibility() {
 
 let modal = document.querySelector("#my-modal");
 let modal2 = document.querySelector("#my-modal2");
+let modal3 = document.querySelector("#my-modal3");
 
 let img1 = document.querySelector('#my-img');
 let img2 = document.querySelector('#my-img2');
 let img3 = document.querySelector('#my-img3');
+let img4 = document.querySelector('#my-img4');
+let img5 = document.querySelector('#my-img5');
 
 let modalImg1 = document.querySelector("#img01");
 let modalImg2 = document.querySelector("#img02");
+let modalImg3 = document.querySelector("#img03");
 
 let captionText = document.querySelector("#caption");
 
@@ -52,10 +56,28 @@ img3.onclick = function () {
     modalImg2.src = this.src;
     captionText.innerHTML = this.alt;
 }
+img4.onclick = function () {
+    console.log("inside");
+    modal3.style.display = "block";
+    this.id === 'my-img4'
+    modalImg3.style.width = "60%";
+    modalImg3.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+img5.onclick = function () {
+    console.log("inside");
+    modal3.style.display = "block";
+    this.id === 'my-img5'
+    modalImg3.style.width = "60%";
+    modalImg3.src = this.src;
+    captionText.innerHTML = this.alt;
+}
 
 let span = document.querySelectorAll(".close")[0];
 let span2 = document.querySelectorAll('.close2')[0];
+let span3 = document.querySelectorAll('.close3')[0];
 
 console.log(span);
 span.onclick = () => modal.style.display = "none";
 span2.onclick = () => modal2.style.display = "none";
+span3.onclick = () => modal3.style.display = "none";

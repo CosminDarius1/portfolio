@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: "Roboto Light", serif;
     letter-spacing: 2px;
 }
 
@@ -64,18 +64,18 @@ main {
         transform: translateY(10px);
     }
 }
+/*my-img section*/
 #my-img {
     width:100%;
-    max-width:300px;
+    max-width:400px;
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
 }
 
-#my-img:hover{opacity: 0.7;}
-#img01 {
-    margin: 0 auto;
-}#img02 {
+#my-img:hover,#my-img2:hover,#my-img3:hover,#my-img4:hover,#my-img5:hover{opacity: 0.7;}
+
+#img01,#img02,#img03 {
     margin: 0 auto;
 }
 /*Modal (background)*/
@@ -121,7 +121,7 @@ main {
     to {transform:scale(1)}
 }
 /* The Close Button */
-.close {
+.close,.close2,.close3 {
     position: absolute;
     top: 50px;
     right: 100px;
@@ -131,29 +131,13 @@ main {
     transition: 0.3s;
 }
 
-.close:hover,
-.close:focus {
+.close:hover,.close2:hover,.close3:hover,
+.close:focus,.close2:focus,.close3:focus {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
-}
-/* The Close2 Button */
-.close2 {
-    position: absolute;
-    top: 50px;
-    right: 100px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
 }
 
-.close2:hover,
-.close2:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-}
 
 
 .nav-left {
@@ -245,6 +229,7 @@ main {
     padding: 0;
     margin: 0 15px 30px 15px;
     color: #f7f7f7;
+    font-family: "Roboto Light", serif;
 }
 
 .portfolio-section {
@@ -318,6 +303,8 @@ main {
     margin-bottom: 10px;
     border-radius: 10px;
     border: 1px solid #d9d9d9;
+    cursor: pointer;
+    transition: 0.3s;
 }
 .project-imgs {
     display: flex;
