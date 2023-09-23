@@ -17,20 +17,45 @@ function toggleSectionVisibility() {
 // window.addEventListener('scroll', toggleSectionVisibility);
 
 let modal = document.querySelector("#my-modal");
+let modal2 = document.querySelector("#my-modal2");
 
-let img = document.querySelector("#my-img");
+let img1 = document.querySelector('#my-img');
+let img2 = document.querySelector('#my-img2');
+let img3 = document.querySelector('#my-img3');
 
-let modalImg = document.querySelector("#img01");
+let modalImg1 = document.querySelector("#img01");
+let modalImg2 = document.querySelector("#img02");
 
 let captionText = document.querySelector("#caption");
 
-img.onclick = function () {
+img1.onclick = function () {
     console.log("inside");
     modal.style.display = "block";
-    modalImg.style.width = "60%";
-    modalImg.src = this.src;
+    this.id === 'my-img'
+        modalImg1.style.width = "60%";
+        modalImg1.src = this.src;
+        captionText.innerHTML = this.alt;
+}
+img2.onclick = function () {
+    console.log("inside");
+    modal2.style.display = "block";
+    this.id === 'my-img2'
+    modalImg2.style.width = "60%";
+    modalImg2.src = this.src;
+    captionText.innerHTML = this.alt;
+};
+img3.onclick = function () {
+    console.log("inside");
+    modal2.style.display = "block";
+    this.id === 'my-img2'
+    modalImg2.style.width = "60%";
+    modalImg2.src = this.src;
     captionText.innerHTML = this.alt;
 }
+
 let span = document.querySelectorAll(".close")[0];
+let span2 = document.querySelectorAll('.close2')[0];
+
 console.log(span);
 span.onclick = () => modal.style.display = "none";
+span2.onclick = () => modal2.style.display = "none";

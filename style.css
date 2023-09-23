@@ -75,6 +75,8 @@ main {
 #my-img:hover{opacity: 0.7;}
 #img01 {
     margin: 0 auto;
+}#img02 {
+    margin: 0 auto;
 }
 /*Modal (background)*/
 .modal {
@@ -135,6 +137,24 @@ main {
     text-decoration: none;
     cursor: pointer;
 }
+/* The Close2 Button */
+.close2 {
+    position: absolute;
+    top: 50px;
+    right: 100px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close2:hover,
+.close2:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 
 .nav-left {
     display: flex;
