@@ -1,21 +1,15 @@
 // Function to toggle section visibility based on scroll position
-function toggleSectionVisibility() {
-    const section = document.querySelector('#about');
-
-    const rect = section.getBoundingClientRect();
-    console.log(window.innerHeight);
-    console.log(rect);
-
-    // Show when section is in viewport
-    if (rect.top < window.innerHeight && rect.bottom >= 0) {
-        rect.classList.add('active');
-    } else {
-        rect.classList.remove('active');
+const text ="Hi, I'm Cosmin, a passionate full-stack developer eager to innovate and create.My journey into coding started with a desire to switch careers, leading me to join the  award-winning Full Stack Track Course at iO Academy.In there I have enforced my skills on languages like HTML, CSS and JAVASCRIPT but also had the opportunity to learn the PHP language, also I have had the chance to work with frameworks like REACT and Slim.I enjoyed working in collaborative team environments, following Agile methodologies and delivering successful projects.To get a better glimpse to what I've done, please explore my projects below :)";
+let charIndex=0;
+function type() {
+    const element = document.querySelector("#typewriter-text");
+    element.textContent += text.charAt(charIndex);
+    charIndex++;
+    if(charIndex < text.length) {
+        setTimeout(type,35);
     }
 }
-
-// window.addEventListener('scroll', toggleSectionVisibility);
-
+type();
 let modal = document.querySelector("#my-modal");
 let modal2 = document.querySelector("#my-modal2");
 let modal3 = document.querySelector("#my-modal3");
