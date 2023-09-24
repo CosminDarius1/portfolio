@@ -30,7 +30,7 @@ img1.onclick = function () {
     console.log("inside");
     modal.style.display = "block";
     this.id === 'my-img'
-        modalImg1.style.width = "60%";
+        modalImg1.style.width = "80%";
         modalImg1.src = this.src;
         captionText.innerHTML = this.alt;
 }
@@ -38,7 +38,7 @@ img2.onclick = function () {
     console.log("inside");
     modal2.style.display = "block";
     this.id === 'my-img2'
-    modalImg2.style.width = "60%";
+    modalImg2.style.width = "80%";
     modalImg2.src = this.src;
     captionText.innerHTML = this.alt;
 };
@@ -46,7 +46,7 @@ img3.onclick = function () {
     console.log("inside");
     modal2.style.display = "block";
     this.id === 'my-img2'
-    modalImg2.style.width = "60%";
+    modalImg2.style.width = "80%";
     modalImg2.src = this.src;
     captionText.innerHTML = this.alt;
 }
@@ -54,7 +54,7 @@ img4.onclick = function () {
     console.log("inside");
     modal3.style.display = "block";
     this.id === 'my-img4'
-    modalImg3.style.width = "60%";
+    modalImg3.style.width = "80%";
     modalImg3.src = this.src;
     captionText.innerHTML = this.alt;
 }
@@ -62,7 +62,7 @@ img5.onclick = function () {
     console.log("inside");
     modal3.style.display = "block";
     this.id === 'my-img5'
-    modalImg3.style.width = "60%";
+    modalImg3.style.width = "80%";
     modalImg3.src = this.src;
     captionText.innerHTML = this.alt;
 }
