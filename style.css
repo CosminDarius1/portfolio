@@ -190,41 +190,6 @@ main {
 }
 
 .hello-section p {
-    font-size: 4rem;
-    align-items: center;
-    color: #f7f7f7;
-}
-
-.hello-section h1 {
-    font-size: 3rem;
-    color: #f7f7f7;
-}
-
-#about {
-  padding-top: 100px;
-}
-
-.about-section {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 100%;
-    padding: 0 10px;
-    transform: translateY(20px);
-    transition: opacity 1s, transform 1s;
-}
-
-.active {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.about-section h2 {
-    font-size: 2rem;
-    margin-left: 15px;
-    color: #f7f7f7;
-}
-.about-section p {
     font-size: 1.5rem;
     padding: 0;
     margin: 0 15px 30px 15px;
@@ -232,6 +197,14 @@ main {
     font-family: "Roboto Light", serif;
 }
 
+.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#portfolio {
+    padding-top: 100px;
+}
 .portfolio-section {
     display: flex;
     flex-wrap: nowrap;
@@ -279,13 +252,18 @@ main {
     margin-top: 15px;
     color: #f7f7f7;
 }
-.card p {
+.card ul {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     padding: 0 40px;
     font-size: 1.5rem;
     color: #f7f7f7;
+}
+.card a {
+    display: contents;
+    text-decoration: none;
+    color: #bbbbbb;
 }
 
 .card-img-text {

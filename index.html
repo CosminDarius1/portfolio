@@ -12,7 +12,6 @@
 <body>
 <nav>
     <div class="nav-left">
-        <a class="link" href="#about">About</a>
         <a class="link" href="#portfolio">Portfolio</a>
     </div>
     <div class="nav-right">
@@ -26,18 +25,14 @@
 
         </div>
         <section class="hello-section">
-            <p>Hello there!</p>
-            <h1>Welcome to Cosmin's portfolio</h1>
+            <p id="typewriter-text"></p>
+
         </section>
     </main>
-    <a href="#about" class="scroll-down-link" data-iconfont="ETmodules" data-icon>
+    <a href="#portfolio" class="scroll-down-link" data-iconfont="ETmodules" data-icon>
         <i class="fas fa-chevron-down"></i>
     </a>
 </div>
-<section id="about" class="about-section">
-        <p id="typewriter-text">
-        </p>
-</section>
 <section id="portfolio" class="portfolio-section">
     <div class="portfolio-description">
         <h2>Portfolio</h2>
@@ -53,35 +48,35 @@
                 <img class="modal-content" id="img01">
                 <div id="caption"></div>
             </div>
-            <p>Email client app is a project which emulates a real email client.In this project the user should be able
-                to compose new emails,send and receive emails from an API , validation rules were implemented as well,
-                and trying to send emails to an invalid adddress would not be possible. During this project I used React
-                and together with my team we build an application based on a supplied design and utilising an existing
-                API. The application will implement features such as pagination, search and filters, all with a crisp
-                responsive front-end based on a provided design.
-                <a class="link" href="https://github.com/iO-Academy/2023-jul-cmail">For more details please check GitHub
-                    repository</a></p>
+            <ul>
+                <li>Emulated a real email client, enabling users to compose, send, and receive emails through an API</li>
+                <li>Implemented Validation rules, restricting sending emails to invalid addresses</li>
+                <li>Technologies:Bootstrap and React, integrated with an existing API for seamless functionality</li>
+                <a class="link" href="https://2023-jul-cmail.dev.io-academy.uk/">Live version | </a>
+                <a class="link" href="https://github.com/iO-Academy/2023-jul-cmail">
+                    GitHub</a>
+            </ul>
         </div>
-    </div>
-    <div class="card">
+
         <h3>Project Management</h3>
         <div class="card-img-text">
             <div class="project-imgs">
                 <img id="my-img2" src="project.png" alt="Project Management 1">
                 <img id="my-img3" src="project-img-3.png" alt="Project Management 2">
             </div>
-                    <div id="my-modal2" class="modal">
-                        <span class="close2">x</span>
-                        <img class="modal-content" id="img02">
-                        <div id="caption"></div>
-                    </div>
-            <p>Project Management APP is a Trello-like kind of app, where the user is Project Manager , and it would be
-                able to see all the projects, which people were assigned to each project,and also the tasks that people
-                took during their projects.During this project I used PHP OOP and together with my team we managed to
-                build a well architected API,which was providing the right data from the database to the Front End and
-                also showcasing the right error codes and messages when something was wrong.
-                <a class="link" href="https://github.com/iO-Academy/jul-2023-project-management-API">For more details
-                    please check GitHub repository</a></p>
+            <div id="my-modal2" class="modal">
+                <span class="close2">x</span>
+                <img class="modal-content" id="img02">
+                <div id="caption"></div>
+            </div>
+            <ul>
+                <li>Developed a Trello-like application for effective project management</li>
+                <li>Enabled project managers to oversee projects, assign team members, and monitor tasks.</li>
+                <li>Utilized PHP OOP to architect a robust API for efficient data flow between the frontend and backend.</li>
+                <a class="link" href="https://2023-jul-project-management-api.dev.io-academy.uk/projects.php">Live version | </a>
+                <a class="link" href="https://github.com/iO-Academy/jul-2023-project-management-API">
+                    GitHub</a>
+            </ul>
         </div>
         <div class="card">
             <h3>Caterpillar Countdown</h3>
@@ -90,24 +85,22 @@
                     <img id="my-img4" src="caterpillar.png" alt="Caterpillar Countdown 1">
                     <img id="my-img5" src="caterpillar2.png" alt="Caterpillar Countdown 2">
                 </div>
-                    <div id="my-modal3" class="modal">
-                        <span class="close3">x</span>
-                        <img class="modal-content" id="img03">
-                        <div id="caption"></div>
-                    </div>
-                <p>
-                    During this project I tested my JavaScript skills and along with my teammates we created Caterpillar
-                    Countdown which is a JavaScript based computer game where the user can test its mental agility.The
-                    game consists of rounds and within each round the user will see 3 to 5
-                    different numbers between 0-100.The user needs to click on the numbers in ascending order to allow
-                    to
-                    progress to the next round. Each round that is completed will add 1 point to the score and a timer
-                    set for 30 seconds will start when the user will click on play.
-                    <a class="link" href="https://github.com/iO-Academy/jul-23-caterpillar-countdown">For more details
-                        please check GitHub repository</a>
-                </p>
+                <div id="my-modal3" class="modal">
+                    <span class="close3">x</span>
+                    <img class="modal-content" id="img03">
+                    <div id="caption"></div>
+                </div>
+                <ul>
+                   <li>Created a JavaScript-based computer game to test mental agility</li>
+                   <li>Users engage in rounds, clicking numbers in ascending order within a set timeframe.</li>
+                   <li>Earn points for completed rounds and face an exciting challenge with each level.
+                   </li>
+                    <a class="link" href="https://2023-jul-caterpillar-countdown.dev.io-academy.uk/">Live version | </a>
+                    <a class="link" href="https://github.com/iO-Academy/jul-23-caterpillar-countdown">GitHub </a>
+               </ul>
             </div>
         </div>
+    </div>
 </section>
 <footer>
     <section class="contact-section">
