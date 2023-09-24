@@ -325,6 +325,7 @@ main {
 .fa-brands {
     font-size: 30px;
 }
+
 @media screen and (max-width: 800px) {
     .card-img-text {
         flex-direction: column;
@@ -378,9 +379,6 @@ main {
         font-size: 1rem;
         margin-left: 15px;
         margin-top: 0;
-    }
-    #my-img {
-        margin-left:20px;
     }
 
     .card-img-text img {

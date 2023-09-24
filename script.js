@@ -10,6 +10,7 @@ function type() {
     }
 }
 type();
+
 let modal = document.querySelector("#my-modal");
 let modal2 = document.querySelector("#my-modal2");
 let modal3 = document.querySelector("#my-modal3");
