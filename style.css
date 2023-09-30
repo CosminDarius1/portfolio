@@ -73,9 +73,9 @@ main {
     transition: 0.3s;
 }
 
-#my-img0:hover,#my-img1:hover,#my-img2:hover,#my-img3:hover,#my-img4:hover,#my-img5:hover{opacity: 0.7;}
+#my-img0:hover,#my-img1:hover,#my-img2:hover,#my-img3:hover,#my-img4:hover,#my-img5:hover,#my-img6:hover,#my-img7:hover{opacity: 0.7;}
 
-#img0,#img01,#img02,#img03 {
+#img0,#img01,#img02,#img03,#img04 {
     margin: 0 auto;
 }
 /*Modal (background)*/
@@ -121,7 +121,7 @@ main {
     to {transform:scale(1)}
 }
 /* The Close Button */
-.close0,.close1,.close2,.close3 {
+.close0,.close1,.close2,.close3,.close4 {
     position: absolute;
     top: 50px;
     right: 100px;
@@ -131,8 +131,8 @@ main {
     transition: 0.3s;
 }
 
-.close0:hover,.close1:hover,.close2:hover,.close3:hover,
-.close:focus,.close2:focus,.close3:focus {
+.close0:hover,.close1:hover,.close2:hover,.close3:hover,.close4:hover,
+.close:focus,.close2:focus,.close3:focus,close4:focus {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
