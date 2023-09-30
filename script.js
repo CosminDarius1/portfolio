@@ -1,5 +1,5 @@
 // Function to toggle section visibility based on scroll position
-const text ="Hello there! I'm Cosmin, a passionate full-stack developer who is always looking to innovate and create meaningful solutions. I had the opportunity to develop my skills in HTML, CSS, JS, PHP and MySQL at iO Academy, where I joined their award-winning bootcamp Full Stack Track Course. Also, in there I explored frameworks like REACT and Slim. Followed Agile methodologies and worked in collaborative team environments to deliver successful projects. For a better glimpse of my work, please explore my projects below."
+const text ="Hello there! I'm Cosmin, a passionate full-stack developer who is always looking to innovate and create meaningful solutions. I had the opportunity to develop my skills in HTML, CSS, JavaScript, PHP and MySQL at iO Academy, where I joined their award-winning bootcamp Full Stack Track Course. I also used frameworks like REACT and Slim to build projects by following Agile methodologies to work in a collaborative team environment. For a better glimpse of my work, please explore my projects below."
 let charIndex= 0;
 function type() {
     const element = document.querySelector("#typewriter-text");
