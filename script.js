@@ -10,27 +10,38 @@ function type() {
     }
 }
 type();
-
-let modal = document.querySelector("#my-modal");
+let modal0 = document.querySelector("#my-modal0");
+let modal1 = document.querySelector("#my-modal1");
 let modal2 = document.querySelector("#my-modal2");
 let modal3 = document.querySelector("#my-modal3");
 
-let img1 = document.querySelector('#my-img');
+let img0 = document.querySelector('#my-img0');
+let img1 = document.querySelector('#my-img1');
 let img2 = document.querySelector('#my-img2');
 let img3 = document.querySelector('#my-img3');
 let img4 = document.querySelector('#my-img4');
 let img5 = document.querySelector('#my-img5');
 
+let modalImg0 = document.querySelector("#img0");
 let modalImg1 = document.querySelector("#img01");
 let modalImg2 = document.querySelector("#img02");
 let modalImg3 = document.querySelector("#img03");
 
 let captionText = document.querySelector("#caption");
 
+img0.onclick = function () {
+    console.log("inside");
+    modal0.style.display = "block";
+    this.id === 'my-img0'
+    modalImg0.style.width = "80%";
+    modalImg0.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
 img1.onclick = function () {
     console.log("inside");
-    modal.style.display = "block";
-    this.id === 'my-img'
+    modal1.style.display = "block";
+    this.id === 'my-img1'
         modalImg1.style.width = "80%";
         modalImg1.src = this.src;
         captionText.innerHTML = this.alt;
@@ -67,12 +78,13 @@ img5.onclick = function () {
     modalImg3.src = this.src;
     captionText.innerHTML = this.alt;
 }
-
-let span = document.querySelectorAll(".close")[0];
+let span0 = document.querySelectorAll(".close0")[0];
+let span1 = document.querySelectorAll(".close1")[0];
 let span2 = document.querySelectorAll('.close2')[0];
 let span3 = document.querySelectorAll('.close3')[0];
 
-console.log(span);
-span.onclick = () => modal.style.display = "none";
+console.log(span1);
+span0.onclick = () => modal0.style.display = "none";
+span1.onclick = () => modal1.style.display = "none";
 span2.onclick = () => modal2.style.display = "none";
 span3.onclick = () => modal3.style.display = "none";

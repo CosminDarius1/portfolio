@@ -65,7 +65,7 @@ main {
     }
 }
 /*my-img section*/
-#my-img {
+#my-img1, #my-img0 {
     width:100%;
     max-width:400px;
     border-radius: 5px;
@@ -73,9 +73,9 @@ main {
     transition: 0.3s;
 }
 
-#my-img:hover,#my-img2:hover,#my-img3:hover,#my-img4:hover,#my-img5:hover{opacity: 0.7;}
+#my-img0:hover,#my-img1:hover,#my-img2:hover,#my-img3:hover,#my-img4:hover,#my-img5:hover{opacity: 0.7;}
 
-#img01,#img02,#img03 {
+#img0,#img01,#img02,#img03 {
     margin: 0 auto;
 }
 /*Modal (background)*/
@@ -121,7 +121,7 @@ main {
     to {transform:scale(1)}
 }
 /* The Close Button */
-.close,.close2,.close3 {
+.close0,.close1,.close2,.close3 {
     position: absolute;
     top: 50px;
     right: 100px;
@@ -131,7 +131,7 @@ main {
     transition: 0.3s;
 }
 
-.close:hover,.close2:hover,.close3:hover,
+.close0:hover,.close1:hover,.close2:hover,.close3:hover,
 .close:focus,.close2:focus,.close3:focus {
     color: #bbb;
     text-decoration: none;
